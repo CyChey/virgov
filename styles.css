@@ -18,8 +18,9 @@ body {
 	animation: clouds-moving infinite 220s;
 	animation-fill-mode: forwards;
 	animation-play-state: running;
-	animation-timing-function: linear;
-	text-align: center;
+    animation-timing-function: linear;
+    overflow: visible;
+  
 }
 @keyframes clouds-moving {
 	0% {
