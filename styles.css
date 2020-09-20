@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+
+body {
+    background: #ffffff;
+    margin: 0 auto;
+}
+.cloud-text {
+	font-family: 'Coiny', cursive;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);
+	background-size: auto;
+	background-attachment: unset;
+	background-position: 0%;
+	width: 80%;
+	margin: 10%;
+	font-size: 88px;
+	animation: clouds-moving infinite 220s;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	animation-timing-function: linear;
+	text-align: center;
+}
+@keyframes clouds-moving {
+	0% {
+		background-position: 0%;	
+	}
+	50% {
+		background-position: 100%;	
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+
+ #highlight {
+    color: highlight;
+    font-size: 1.25rem;
+  } 
+  
+.gallery {
+    padding: 0 0 4rem 0;
+    text-align: center;
+    display: block;
+  }
+  
+  .img-container {
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    
+  } 
+  
+img {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+   
+   
+  } 
+
+.thumbnail:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+  
+ 
